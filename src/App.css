@@ -1,5 +1,6 @@
 .App {
-  text-align: center;
+  background-color: #e8e9ea;
+  min-height: 100vh;
 }
 
 .App-logo {
@@ -10,7 +11,7 @@
 
 .App-header {
   background-color: #e8e9ea;
-  min-height: 100vh;
+  min-height: 25vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -22,16 +23,102 @@
 .form-div {
   background-color: #fff;
   width: 50vw;
-  height: 50vh;
-  min-width: 300px;
-  min-height: 300px;
+  height: 100%;
+  min-width: 200px;
+  min-height: 200px;
   border-radius: 20px;
   padding: 30px;
   box-shadow: 5px 8px 5px #d8d8d8;
+  display: flex;
+  justify-content: center;
 }
 
 .form-pre-challenge-greeting {
   color: #1a1919;
   text-align: left;
   font-size: 2rem;
+}
+
+.App-CCard {
+  background-color: #dbdbdb;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.Div-Form {
+  margin: 5vh;
+}
+
+.Input-Control {
+  border-radius: 5px;
+  min-height: 25px;
+  min-width: 30px;
+  width: 100%;
+  border: 1px solid;
+  box-shadow: 0 1px 2px black;
+  border-color: black;
+}
+
+.Form-Label {
+  margin-bottom: 15px;
+  
+}
+
+.Button {
+  border-radius: 10px;
+  background-color: #32cd32;
+  box-shadow: 0 0px 0px;
+  border: 1px;
+  cursor: pointer;
+  min-width: 80px;
+  width: 80%;
+  min-height: 30px;
+}
+.Div-Button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.Error {
+  background-color: red;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  min-height: 25px;
+}
+
+.Div-CContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h3 {
+  font-size: 10px;
+  margin-bottom: 0px;
+}
+
+@media (max-width: 768px) {
+  .form-div {
+    display: block;
+  }
+  .App-CCard {
+    margin-top: 10px;
+  }
+  .Error {
+    min-height: 30px;
+  }
 }
